@@ -40,12 +40,12 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
 
 1. Verifique se sua estrutura de diretórios está correta. Ela deve se parecer com isso:
   ```
-.
-├── aula-13
-│   ├── examples
-│   │   └── Bubble.asm
-│   ├── LICENSE
-│   └── README.md
+  .
+  ├── aula-13
+  │   ├── examples
+  │   │   └── Bubble.asm
+  │   ├── LICENSE
+  │   └── README.md
 
   ```
   
@@ -55,11 +55,11 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
   ```
 1. A saída abaixo deve ser obtida. Se isso não ocorreu, verifique sua estrutura de diretórios.
 
-   ```
-MARS 4.5  Copyright 2003-2014 Pete Sanderson and Kenneth Vollmar
+  ```
+  MARS 4.5  Copyright 2003-2014 Pete Sanderson and Kenneth Vollmar
 
-Mem[0x10010000]	0x00000001	0x00000002	0x00000003	0x00000004	
-Mem[0x10010010]	0x00000005
-```
+  Mem[0x10010000]	0x00000001	0x00000002	0x00000003	0x00000004	
+  Mem[0x10010010]	0x00000005
+  ```
 
 ## Exemplos
