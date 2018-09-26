@@ -67,9 +67,10 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
     Mem[0x10010000]	0x00000001	0x00000002	0x00000003	0x00000004	
     Mem[0x10010010]	0x00000005
     ```
-### Atividade proposta 2
 
-Nessa atividade, você irá implementar o algoritmo de cálculo do Máximo Divisor Comum de Euclides, na sua versão recursiva. O algoritmo iterativo foi dado como modelo de referência: seu algoritmo deve apresentar o mesmo resultado. Para executar a versão iterativa, execute o seguinte comando:
+### Atividade proposta 1
+
+Nesta atividade, você irá implementar o algoritmo de cálculo do Máximo Divisor Comum de Euclides, na sua versão recursiva. O algoritmo iterativo foi dado como modelo de referência: seu algoritmo deve apresentar o mesmo resultado. Para executar a versão iterativa, execute o seguinte comando:
 
     ```
     $ java -jar Mars4_5.jar aula-13/gcd/gcd_test.asm aula-13/gcd/gcd_iter.asm
@@ -83,6 +84,7 @@ Após executar esse comando, a seguinte saída deve ser apresentada. Veja o cont
     1
     21
     ```
+    
 #### O que deve ser feito?
 
 Você deve criar um arquivo `aula-13/gcd/gcd_recur.asm` a partir da versão iterativa fornecida e implementar o algoritmo GCD de Euclides na forma recursiva. Para testar seu algoritmo, você deve executar:
@@ -96,3 +98,14 @@ Os resultados apresentados devem ser os mesmos apresentados pela versão iterati
 #### O que deve ser entregue?
 
 Entregue, via moodle, o arquivo `gcd_recur.asm` criado por você.
+
+
+### Atividade proposta 2
+
+Nesta atividade, você irá verificar o comportamento da pilha em algoritmos recursivos e algoritmos iterativos. Para isso, irá utilizar os códigos desenvolvidos na atividade 1 e os códigos de exemplo fornecidos pelo professor.
+
+Analise o código abaixo, usado para imprimir, usando `syscall` o valor do registrador $sp. Ele foi concebido para não gerar efeitos colaterais (*side effects*) indesejados no que diz respeito a registradores. 
+
+
+
+
