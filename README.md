@@ -21,16 +21,18 @@
 ## Referências
 
 * [Mars - MIPS Assembler and Runtime Simulator](http://courses.missouristate.edu/KenVollmar/mars/)
+* [Usando o Mars da Linha de Comando](https://courses.missouristate.edu/KenVollmar/mars/Help/MarsHelpCommand.html)
+* [Syscall functions do Mars](http://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html)
 * [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
 * [GCD de Euclides](https://en.wikipedia.org/wiki/Euclidean_algorithm)
-* [Usando o Mars da Linha de Comando](https://courses.missouristate.edu/KenVollmar/mars/Help/MarsHelpCommand.html)
+* Referências das aulas anteriores, disponveis no Moodle
 
 
 ## Atividades
 
 Na descrição dessas atividades, utilizaremos o Mars via linha de comando (terminal no linux, prompt no windows) para facilitar a descrição dos procedimentos. Não é necessário utilizar a linha de comando: você pode utilizar a interface gráfica.
 
-### Testando o mars
+### Preparando o Ambiente
 
 1. Crie uma pasta em seu computador. No restante desse tutorial, chamaremos esta pasta de `$ATIVIDADE`;
 
@@ -65,5 +67,28 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
     Mem[0x10010000]	0x00000001	0x00000002	0x00000003	0x00000004	
     Mem[0x10010010]	0x00000005
     ```
+### Atividade a ser resolvida
 
-## Exemplos
+Nessa atividade, você irá implementar o algoritmo de cálculo do Máximo Divisor Comum de Euclides, na sua versão recursiva. O algoritmo iterativo foi dado como modelo de referência: seu algoritmo deve apresentar o mesmo resultado. Para executar a versão iterativa, execute o seguinte comando:
+
+    ```
+    $ java -jar Mars4_5.jar aula-13/gcd/gcd_test.asm aula-13/gcd/gcd_iter.asm
+    ```
+  
+Após executar esse comando, a seguinte saída deve ser apresentada. Veja o conteúdo do arquivo `aula-13/gcd/gcd_test.asm` para entender o significado dos valores apresentados.
+
+    ```
+    6
+    4
+    1
+    21
+    ```
+#### O que deve ser feito?
+
+Você deve criar um arquivo `aula-13/gcd/gcd_recur.asm` a partir da versão iterativa fornecida e implementar o algoritmo GCD de Euclides na forma recursiva. Para testar seu algoritmo, você deve executar:
+
+    ```
+    $ java -jar Mars4_5.jar aula-13/gcd/gcd_test.asm aula-13/gcd/gcd_recur.asm
+    ```
+
+Os resultados apresentados devem ser os mesmos apresentados pela versão iterativa.
