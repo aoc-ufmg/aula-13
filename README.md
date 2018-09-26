@@ -2,6 +2,23 @@
 
 # Arquitetura e Organização de Computadores - Aula 13
 
+- [Assunto](#assunto)
+- [Objetivos](#objetivos)
+  * [Espera-se que ao final da aula o aluno saiba responder às seguintes questões:](#espera-se-que-ao-final-da-aula-o-aluno-saiba-responder--s-seguintes-quest-es-)
+- [Referências](#refer-ncias)
+- [Atividades](#atividades)
+  * [Preparando o Ambiente](#preparando-o-ambiente)
+  * [Atividade proposta 1](#atividade-proposta-1)
+    + [O que deve ser feito?](#o-que-deve-ser-feito-)
+    + [O que deve ser entregue?](#o-que-deve-ser-entregue-)
+  * [Atividade proposta 2](#atividade-proposta-2)
+    + [O que deve ser feito?](#o-que-deve-ser-feito--1)
+    + [O que deve ser entregue?](#o-que-deve-ser-entregue--1)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
 ## Assunto
 
 * MARS: execução de procedimentos não recursivos e recursivos.
