@@ -108,23 +108,38 @@ Analise o código abaixo, usado para imprimir, usando `syscall` o valor do regis
 
 ```assembly
 print_sp:
-addi    $sp, $sp, -8
-sw      $a0, 0($sp)
-sw      $v0, 4($sp)
-li      $a0, '\t'
-li      $v0, 11
-syscall
-addi    $a0, $sp, 8
-li      $v0, 34
-syscall
-li      $a0, '\n'
-li      $v0, 11
-syscall
-lw      $a0, 0($sp)
-lw      $v0, 4($sp)
-addi    $sp, $sp, 8
-jr      $ra
+    addi    $sp, $sp, -8
+    sw      $a0, 0($sp)
+    sw      $v0, 4($sp)
+    li      $a0, '\t'
+    li      $v0, 11
+    syscall
+    addi    $a0, $sp, 8
+    li      $v0, 34
+    syscall
+    li      $a0, '\n'
+    li      $v0, 11
+    syscall
+    lw      $a0, 0($sp)
+    lw      $v0, 4($sp)
+    addi    $sp, $sp, 8
+    jr      $ra
 ```
- 
+ Adicione o trecho de código acima no arquivo de solução para o GCD de Euclides (não entregue a versão com esta alteração), adicione a chamada a esta função usando `jal print_sp` em algum local apropriado para observar o comportamento da pilha durante a execução do programa. Execute o programa e observe a saída. 
 
 
+#### O que deve ser feito?
+
+Após executar o programa modificado, responda às seguintes perguntas:
+
+1. Quantas vezes ocorreu a chamada recursiva para cada um dos 4 pares de valores testados pelo programa do arquivo `gcd_test.asm`?
+
+1. Quantas posições de memória foram necessárias para armazenar a pilha durante a execução de cada um dos 4 pares de valores testados pelo programa do arquivo `gcd_test.asm`?
+
+1. Analise o programa iterativo fornecido pelo professor e informe quantas posições de memória foram necessárias para armazenar a pilha durante a execução de cada um dos 4 pares de valores testados. 
+
+1. Expresse quais as vantagens e desvantagens do algoritmo recursivo, em relação ao algoritmo iterativo.
+
+#### O que deve ser entregue?
+
+Entregue, via moodle, as respostas das perguntas propostas.
