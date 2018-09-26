@@ -57,7 +57,7 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
     ```
     $ java -jar Mars4_5.jar 0x10010000-0x10010010 aula-13/bubble/bubble.asm
     ```
-1. A saída abaixo deve ser obtida. Se isso não ocorreu, verifique sua estrutura de diretórios.
+1. A saída abaixo deve ser obtida. Se isso não ocorreu, verifique sua estrutura de diretórios. Caso você esteja executando via interface gráfica, verifique se os endereços de memória correspondentes contêm os valores apresentados abaixo.
 
     ```
     MARS 4.5  Copyright 2003-2014 Pete Sanderson and Kenneth Vollmar
