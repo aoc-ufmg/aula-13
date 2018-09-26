@@ -72,26 +72,26 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
 
 Nesta atividade, você irá implementar o algoritmo de cálculo do Máximo Divisor Comum de Euclides, na sua versão recursiva. O algoritmo iterativo foi dado como modelo de referência: seu algoritmo deve apresentar o mesmo resultado. Para executar a versão iterativa, execute o seguinte comando:
 
-    ```
-    $ java -jar Mars4_5.jar aula-13/gcd/gcd_test.asm aula-13/gcd/gcd_iter.asm
-    ```
+```
+$ java -jar Mars4_5.jar aula-13/gcd/gcd_test.asm aula-13/gcd/gcd_iter.asm
+```
   
 Após executar esse comando, a seguinte saída deve ser apresentada. Veja o conteúdo do arquivo `aula-13/gcd/gcd_test.asm` para entender o significado dos valores apresentados.
 
-    ```
-    6
-    4
-    1
-    21
-    ```
+```
+6
+4
+1
+21
+```
     
 #### O que deve ser feito?
 
 Você deve criar um arquivo `aula-13/gcd/gcd_recur.asm` a partir da versão iterativa fornecida e implementar o algoritmo GCD de Euclides na forma recursiva. Para testar seu algoritmo, você deve executar:
 
-    ```
-    $ java -jar Mars4_5.jar aula-13/gcd/gcd_test.asm aula-13/gcd/gcd_recur.asm
-    ```
+```
+$ java -jar Mars4_5.jar aula-13/gcd/gcd_test.asm aula-13/gcd/gcd_recur.asm
+```
 
 Os resultados apresentados devem ser os mesmos apresentados pela versão iterativa.
 
@@ -106,25 +106,25 @@ Nesta atividade, você irá verificar o comportamento da pilha em algoritmos rec
 
 Analise o código abaixo, usado para imprimir, usando `syscall` o valor do registrador $sp. Ele foi concebido para não gerar efeitos colaterais (*side effects*) indesejados no que diz respeito a registradores. 
 
-    ```
-    print_sp:
-    addi    $sp, $sp, -8
-    sw      $a0, 0($sp)
-    sw      $v0, 4($sp)
-    li      $a0, '\t'
-    li      $v0, 11
-    syscall
-    addi    $a0, $sp, 8
-    li      $v0, 34
-    syscall
-    li      $a0, '\n'
-    li      $v0, 11
-    syscall
-    lw      $a0, 0($sp)
-    lw      $v0, 4($sp)
-    addi    $sp, $sp, 8
-    jr      $ra
-    ```
+```assembly
+print_sp:
+addi    $sp, $sp, -8
+sw      $a0, 0($sp)
+sw      $v0, 4($sp)
+li      $a0, '\t'
+li      $v0, 11
+syscall
+addi    $a0, $sp, 8
+li      $v0, 34
+syscall
+li      $a0, '\n'
+li      $v0, 11
+syscall
+lw      $a0, 0($sp)
+lw      $v0, 4($sp)
+addi    $sp, $sp, 8
+jr      $ra
+```
  
 
 
