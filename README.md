@@ -42,16 +42,20 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
     ```
     .
     ├── aula-13
-    │   ├── examples
-    │   │   └── Bubble.asm
+    │   ├── bubble
+    │   │   └── bubble.asm
+    │   ├── gcd
+    │   │   ├── gcd_iter.asm
+    │   │   └── gcd_test.asm
     │   ├── LICENSE
     │   └── README.md
+    └── Mars4_5.jar
 
     ```
   
 1. Abra um terminal/prompt na pasta `$ATIVIDADE` e execute o seguinte comando:
     ```
-    $ java -jar Mars4_5.jar 0x10010000-0x10010010 aula-13/examples/Bubble.asm
+    $ java -jar Mars4_5.jar 0x10010000-0x10010010 aula-13/bubble/bubble.asm
     ```
 1. A saída abaixo deve ser obtida. Se isso não ocorreu, verifique sua estrutura de diretórios.
 
