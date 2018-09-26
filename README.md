@@ -67,7 +67,7 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
     Mem[0x10010000]	0x00000001	0x00000002	0x00000003	0x00000004	
     Mem[0x10010010]	0x00000005
     ```
-### Atividade a ser resolvida
+### Atividade proposta 2
 
 Nessa atividade, você irá implementar o algoritmo de cálculo do Máximo Divisor Comum de Euclides, na sua versão recursiva. O algoritmo iterativo foi dado como modelo de referência: seu algoritmo deve apresentar o mesmo resultado. Para executar a versão iterativa, execute o seguinte comando:
 
@@ -92,3 +92,7 @@ Você deve criar um arquivo `aula-13/gcd/gcd_recur.asm` a partir da versão iter
     ```
 
 Os resultados apresentados devem ser os mesmos apresentados pela versão iterativa.
+
+#### O que deve ser entregue?
+
+Entregue, via moodle, o arquivo `gcd_recur.asm` criado por você.
