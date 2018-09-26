@@ -1,5 +1,3 @@
-# aula-13
-
 ![Logo UFMG](https://www.ufmg.br/marca/ass6.jpg)
 
 # Arquitetura e Organização de Computadores - Aula 13
