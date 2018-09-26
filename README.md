@@ -106,6 +106,25 @@ Nesta atividade, você irá verificar o comportamento da pilha em algoritmos rec
 
 Analise o código abaixo, usado para imprimir, usando `syscall` o valor do registrador $sp. Ele foi concebido para não gerar efeitos colaterais (*side effects*) indesejados no que diz respeito a registradores. 
 
-
+    ```
+    print_sp:
+    addi    $sp, $sp, -8
+    sw      $a0, 0($sp)
+    sw      $v0, 4($sp)
+    li      $a0, '\t'
+    li      $v0, 11
+    syscall
+    addi    $a0, $sp, 8
+    li      $v0, 34
+    syscall
+    li      $a0, '\n'
+    li      $v0, 11
+    syscall
+    lw      $a0, 0($sp)
+    lw      $v0, 4($sp)
+    addi    $sp, $sp, 8
+    jr      $ra
+    ```
+ 
 
 
