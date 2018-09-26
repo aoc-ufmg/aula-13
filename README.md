@@ -20,6 +20,37 @@
 
 ## Referências
 
+* [Mars - MIPS Assembler and Runtime Simulator](http://courses.missouristate.edu/KenVollmar/mars/)
+* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
+* [GCD de Euclides](https://en.wikipedia.org/wiki/Euclidean_algorithm)
+* [Usando o Mars da Linha de Comando](https://courses.missouristate.edu/KenVollmar/mars/Help/MarsHelpCommand.html)
+
+
 ## Atividades
+
+Na descrição dessas atividades, utilizaremos o Mars via linha de comando (terminal no linux, prompt no windows) para facilitar a descrição dos procedimentos. Não é necessário utilizar a linha de comando: você pode utilizar a interface gráfica.
+
+### Testando o mars
+
+1. Crie uma pasta em seu computador. No restante desse tutorial, chamaremos esta pasta de `$ATIVIDADE`;
+
+1. Faça o download (ou melhor, [clone](https://help.github.com/articles/cloning-a-repository/)) o conteúdo do repositório da aula. Armazene esse conteúdo dentro da pasta `$ATIVIDADE/aula-13`;
+
+1. Faça o download do Mars para o diretório `$ATIVIDADE`. No restante desse tutorial, consideraremos que o arquivo baixado seja o `Mars4_5.jar`;
+
+1. Abra um terminal/prompt na pasta `$ATIVIDADE` e execute o seguinte comando:
+  ```
+  $ java -jar Mars4_5.jar 0x10010000-0x10010010 aula-13/examples/Bubble.asm
+  ```
+1. A saída abaixo deve ser obtida. Se isso não ocorreu, verifique sua estrutura de diretório que deve ser algo assim:
+  ```
+  .
+├── aula-13
+│   ├── examples
+│   │   └── Bubble.asm
+│   ├── LICENSE
+│   └── README.md
+
+  ```
 
 ## Exemplos
