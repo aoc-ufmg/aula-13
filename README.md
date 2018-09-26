@@ -39,27 +39,27 @@ Na descrição dessas atividades, utilizaremos o Mars via linha de comando (term
 1. Faça o download do Mars para o diretório `$ATIVIDADE`. No restante desse tutorial, consideraremos que o arquivo baixado seja o `Mars4_5.jar`;
 
 1. Verifique se sua estrutura de diretórios está correta. Ela deve se parecer com isso:
-  ```
-  .
-  ├── aula-13
-  │   ├── examples
-  │   │   └── Bubble.asm
-  │   ├── LICENSE
-  │   └── README.md
+    ```
+    .
+    ├── aula-13
+    │   ├── examples
+    │   │   └── Bubble.asm
+    │   ├── LICENSE
+    │   └── README.md
 
-  ```
+    ```
   
 1. Abra um terminal/prompt na pasta `$ATIVIDADE` e execute o seguinte comando:
-  ```
-  $ java -jar Mars4_5.jar 0x10010000-0x10010010 aula-13/examples/Bubble.asm
-  ```
+    ```
+    $ java -jar Mars4_5.jar 0x10010000-0x10010010 aula-13/examples/Bubble.asm
+    ```
 1. A saída abaixo deve ser obtida. Se isso não ocorreu, verifique sua estrutura de diretórios.
 
-  ```
-  MARS 4.5  Copyright 2003-2014 Pete Sanderson and Kenneth Vollmar
+    ```
+    MARS 4.5  Copyright 2003-2014 Pete Sanderson and Kenneth Vollmar
 
-  Mem[0x10010000]	0x00000001	0x00000002	0x00000003	0x00000004	
-  Mem[0x10010010]	0x00000005
-  ```
+    Mem[0x10010000]	0x00000001	0x00000002	0x00000003	0x00000004	
+    Mem[0x10010010]	0x00000005
+    ```
 
 ## Exemplos
